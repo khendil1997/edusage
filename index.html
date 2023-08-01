@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edusage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Edusage</h1>
+    </header>
+    <nav>
+        <!-- Add navigation links here -->
+        <a href="#journals">Journals</a>
+        <a href="#articles">Articles</a>
+        <a href="#subject-matter">Subject Matter</a>
+        <a href="#latest-news">Latest News</a>
+        <a href="#journals" onclick="showAlert('Welcome to Journals!')">Journals</a>
+    <a href="#articles" onclick="showAlert('Check out our latest articles!')">Articles</a>
+    <a href="#subject-matter" onclick="showAlert('Explore our subject matter content!')">Subject Matter</a>
+    <a href="#latest-news" onclick="showAlert('Stay updated with the latest news!')">Latest News</a>
+    </nav>
+    <main>
+        <section id="journals">
+            <!-- Add content related to journals here -->
+            <h2>Journals</h2>
+            <p>Content about journals goes here.</p>
+        </section>
+
+        <section id="articles">
+            <!-- Add content related to articles here -->
+            <h2>Articles</h2>
+            <p>Content about articles goes here.</p>
+        </section>
+
+        <section id="subject-matter">
+            <!-- Add content related to subject matter here -->
+            <h2>Subject Matter</h2>
+            <p>Content about subject matter goes here.</p>
+        </section>
+
+        <section id="latest-news">
+            <!-- Add content related to the latest news here -->
+            <h2>Latest News</h2>
+            <p>Content about the latest news goes here.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form onsubmit="return submitForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Edusage. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
